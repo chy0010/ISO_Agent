@@ -13,12 +13,15 @@
 
 ---
 
-<!-- DEMO — drop a recording in here once you have one.
-     Terminal GIF (recommended, autoplays inline):
+<p align="center">
+  <img src="assets/session.png" alt="ISO Agent answering live questions about MISO and SPP in the terminal" width="900">
+</p>
+
+<!-- Replace the still above with a terminal GIF when you have one — it autoplays inline:
          ![ISO Agent demo](assets/demo.gif)
-     Video: drag the .mp4 into the GitHub web editor for this file and paste
-     the resulting user-attachments URL on its own line — a committed .mp4
-     renders as a link, not a player. -->
+     For video, drag the .mp4 into the GitHub web editor for this file and paste the
+     resulting user-attachments URL on its own line; a committed .mp4 renders as a
+     link, not a player. -->
 
 ## What it is
 
@@ -146,9 +149,6 @@ That $363/MWh is roughly ten times a normal off-peak price — an evening scarci
 with only $9.69 of it coming from congestion, so the cost is systemwide rather than a
 local transmission constraint. Asking `why are prices so high right now?` routes to
 `explain_grid_concept` and answers from the price-drivers documentation.
-
-<!-- SCREENSHOT — drop the terminal capture in here:
-     ![Session](assets/session.png) -->
 
 Each module also runs standalone for a quick smoke test:
 
