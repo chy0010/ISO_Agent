@@ -113,19 +113,41 @@ python grid_rag.py --ingest
 python graph.py
 ```
 
-<!-- ⚠️ The numbers below are ILLUSTRATIVE — replace this block with a real paste
-     from your own session before anyone reads too closely. -->
+A real session, evening peak on August 4, 2026:
 
 ```
-If you have any grid question please ask ?: what's MISO's fuel mix right now?
-  calling tool :  miso_fuel_mix
+If you have any grid question please ask ?: What's the current load on MISO?
+  calling tool :  miso_load
 
-Natural gas is leading at 41.2 GW (38.4%), followed by coal at 28.1 GW (26.2%)
-and nuclear at 12.9 GW (12.0%). Total generation is 107.2 GW as of
-2026-08-05 14:35:00-05:00.
+As of August 4, 2026, at 20:05 CDT, the current load on the MISO grid is 102,257 MW.
+
+If you have any grid question please ask ?: What are MISO prices right now in Indiana?
+  calling tool :  miso_prices
+
+As of August 4, 2026, at 20:15 CDT, the real-time electricity price at the Indiana Hub
+in MISO is $363.18 per MWh, with a congestion cost of $9.69.
+
+If you have any grid question please ask ?: What's SPP's fuel mix look like right now?
+  calling tool :  spp_fuel_mix
+
+As of August 4, 2026, at 20:15 CDT, SPP's current fuel mix is as follows:
+
+- **Natural Gas**: 23,988 MW (39.4%)
+- **Coal**: 18,810 MW (30.9%)
+- **Wind**: 12,668 MW (20.8%)
+- **Hydro**: 2,676 MW (4.4%)
+- **Nuclear**: 1,970 MW (3.2%)
+- **Solar**: 513 MW (0.8%)
+- **Other**: 258 MW (0.4%)
+- **Waste Disposal Services**: 10 MW (0.0%)
 ```
 
-<!-- SCREENSHOT — a still of a good session reads well here:
+That $363/MWh is roughly ten times a normal off-peak price — an evening scarcity event,
+with only $9.69 of it coming from congestion, so the cost is systemwide rather than a
+local transmission constraint. Asking `why are prices so high right now?` routes to
+`explain_grid_concept` and answers from the price-drivers documentation.
+
+<!-- SCREENSHOT — drop the terminal capture in here:
      ![Session](assets/session.png) -->
 
 Each module also runs standalone for a quick smoke test:
