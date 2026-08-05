@@ -1,0 +1,11 @@
+langgraph
+langchain-core
+langchain-openai
+langchain-community
+langchain-postgres
+langchain-text-splitters
+gridstatus
+pandas
+pypdf
+psycopg[binary]
+python-dotenv
