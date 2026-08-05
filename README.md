@@ -14,7 +14,11 @@
 ---
 
 <p align="center">
-  <img src="assets/session.png" alt="ISO Agent answering live questions about MISO and SPP in the terminal" width="900">
+  <img src="assets/compare.png" alt="ISO Agent comparing the fuel mix across MISO, PJM and CAISO, fanning out to three EIA calls" width="900">
+</p>
+
+<p align="center">
+  <sub>One question, three parallel EIA calls — all three grids pulled from the same source so the numbers are actually comparable.</sub>
 </p>
 
 <!-- Replace the still above with a terminal GIF when you have one — it autoplays inline:
@@ -144,6 +148,10 @@ As of August 4, 2026, at 20:15 CDT, SPP's current fuel mix is as follows:
 - **Other**: 258 MW (0.4%)
 - **Waste Disposal Services**: 10 MW (0.0%)
 ```
+
+<p align="center">
+  <img src="assets/session.png" alt="ISO Agent answering MISO fuel mix, load and price questions in the terminal" width="900">
+</p>
 
 That $363/MWh is roughly ten times a normal off-peak price — an evening scarcity event,
 with only $9.69 of it coming from congestion, so the cost is systemwide rather than a
